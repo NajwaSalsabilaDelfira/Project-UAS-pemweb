@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Eat Smart Live Well</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Eat Smart<span>Live Well</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#nutrisi">Nutrition</a>
+        <a href="#resep dan pola">Recipe & Patterns</a>
+        <a href="#produk">Product</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <div class="mask-container">
+        <main class="content">
+          <h1>
+            Cegah malnutrisi, investasikan gizi untuk generasi yang lebih
+            <span>cerdas dan kuat.</span>
+          </h1>
+          <p>
+            <b>
+              Malnutrisi berdampak besar pada tumbuh kembang anak, baik secara
+              fisik maupun mental. Generasi yang sehat dan cerdas membutuhkan
+              asupan gizi yang cukup sejak dini. Dengan memberikan makanan
+              bergizi, kita membantu menciptakan masa depan yang lebih cerah,
+              penuh dengan generasi yang siap menghadapi tantangan dunia.
+            </b>
+          </p>
+          <a href="#" class="btn-buy">Beli Sekarang</a>
+        </main>
+      </div>
+    </section>
+    <section id="nutrisi" class="info">
+      <h4><span>Nutri</span>tion</h4>
+
+      <div class="info-grid">
+        <div
+          class="info-item"
+          onclick="showDetails('Karbohidrat', 'Karbohidrat adalah salah satu makronutrien utama yang menjadi sumber energi utama bagi tubuh manusia. Tersusun dari molekul karbon, hidrogen, dan oksigen, karbohidrat terbagi menjadi dua jenis utama, yaitu karbohidrat sederhana dan karbohidrat kompleks. Karbohidrat sederhana, seperti gula, ditemukan dalam buah-buahan, susu, dan pemanis tambahan, sementara karbohidrat kompleks, seperti pati dan serat, terdapat dalam makanan seperti roti gandum, nasi, kentang, dan kacang-kacangan. Fungsi utama karbohidrat adalah menyediakan energi melalui glukosa yang dipecah dan digunakan oleh tubuh untuk mendukung aktivitas fisik, fungsi otak, dan kerja organ tubuh. Sumber karbohidrat yang sehat mencakup buah-buahan, sayuran, biji-bijian, dan kacang-kacangan, sementara konsumsi berlebihan karbohidrat sederhana, seperti yang terdapat dalam makanan olahan, dapat meningkatkan risiko obesitas dan penyakit metabolik. Oleh karena itu, konsumsi karbohidrat yang seimbang sangat penting untuk menjaga kesehatan tubuh.')"
+        >
+          <img
+            src="img/logo karbo.jpg"
+            alt="Karbohidrat"
+            class="info-item-img"
+          />
+          <h3 class="info-item-title">Karbohidrat</h3>
+        </div>
+        <div
+          class="info-item"
+          onclick="showDetails('Protein', 'Protein adalah molekul kompleks yang terdiri dari asam amino dan berperan penting dalam struktur, fungsi, serta regulasi sel-sel tubuh. Sebagai salah satu makronutrien utama, protein membantu membangun dan memperbaiki jaringan tubuh, memproduksi enzim, hormon, serta mendukung sistem kekebalan. Sumber protein dapat berasal dari hewani, seperti daging, ikan, telur, dan susu, serta nabati, seperti kacang-kacangan, tempe, dan tahu. Protein sangat penting untuk pertumbuhan, pemeliharaan tubuh, dan penyediaan energi saat dibutuhkan, sehingga asupannya harus cukup sesuai kebutuhan individu.')"
+        >
+          <img src="img/logo protein.jpg" alt="Protein" class="info-item-img" />
+          <h3 class="info-item-title">Protein</h3>
+        </div>
+        <div
+          class="info-item"
+          onclick="showDetails('Lemak Sehat', 'Lemak sehat adalah jenis lemak yang bermanfaat bagi tubuh karena membantu menjaga fungsi organ, mendukung kesehatan jantung, dan menyerap vitamin larut lemak (A, D, E, K). Lemak sehat terbagi menjadi dua jenis utama: lemak tak jenuh tunggal, yang ditemukan dalam alpukat, kacang-kacangan, dan minyak zaitun, serta lemak tak jenuh ganda, seperti omega-3 dan omega-6, yang terdapat dalam ikan berlemak, biji-bijian, dan minyak nabati. Konsumsi lemak sehat dalam jumlah yang tepat dapat membantu menurunkan kadar kolesterol jahat, mengurangi risiko penyakit jantung, dan mendukung fungsi otak.')"
+        >
+          <img
+            src="img/logo lemak sehat.jpg"
+            alt="Lemak Sehat"
+            class="info-item-img"
+          />
+          <h3 class="info-item-title">Lemak Sehat</h3>
+        </div>
+        <div
+          class="info-item"
+          onclick="showDetails('Vitamin & Mineral', 'Vitamin dan mineral adalah mikronutrien esensial yang dibutuhkan tubuh dalam jumlah kecil untuk mendukung berbagai fungsi vital. Vitamin berperan dalam menjaga kesehatan kulit, mata, sistem kekebalan, dan metabolisme, sedangkan mineral membantu membangun tulang, mengatur cairan tubuh, dan mendukung fungsi saraf serta otot. Vitamin dibagi menjadi dua jenis, yaitu larut dalam air (seperti vitamin C dan B kompleks) dan larut dalam lemak (seperti vitamin A, D, E, dan K). Mineral utama meliputi kalsium, zat besi, magnesium, dan seng. Nutrisi ini dapat diperoleh dari makanan seperti buah, sayur, biji-bijian, susu, dan daging, sehingga pola makan seimbang sangat penting untuk memenuhi kebutuhan vitamin dan mineral tubuh.')"
+        >
+          <img
+            src="img/logo vitamin dan mineral.jpg"
+            alt="Vitamin & Mineral"
+            class="info-item-img"
+          />
+          <h3 class="info-item-title">Vitamin & Mineral</h3>
+        </div>
+        <!-- Add more menu items similarly -->
+      </div>
+    </section>
+
+    <style>
+      #about .row {
+        display: flex;
+        align-items: center;
+      }
+
+      #about img {
+        flex: 1;
+        max-width: 50%;
+      }
+
+      #about .content {
+        flex: 1;
+        padding-left: 20px;
+      }
+
+      #about .content p {
+        color: #333; /* Warna teks */
+        text-align: justify; /* Justifikasi teks */
+        margin: 10px 0; /* Jarak antar paragraf */
+      }
+    </style>
+
+    <!-- About Section end -->
+
+    <!-- Nutrition Section start -->
+    <section id="resep dan pola" class="menu">
+      <div class="menu-container">
+        <h2><span>recipes </span>& Patterns</h2>
+
+        <div class="menu-grid">
+          <div
+            class="menu-card"
+            onclick="showDetails(' Bahan-bahan 1 porsi nasi merah. 1 butir telur.1 genggam bayam, wortel parut, dan jagung manis pipil. 1 siung bawang putih (cincang). 1 sdm kecap rendah garam. 1 sdm minyak zaitun atau minyak kelapa. Cara membuat Panaskan minyak, tumis bawang putih hingga harum. Masukkan sayuran, tumis hingga layu.Tambahkan nasi merah, aduk rata. Tambahkan kecap, aduk hingga semua bahan tercampur. Geser nasi ke pinggir wajan, masukkan telur, orak-arik, lalu campur dengan nasi. Sajikan hangat.')"
+          >
+            <img
+              src="img/Resep Nasi Goreng Sayur Hijau.jpeg"
+              alt="Nasi Goreng Sayur"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Nasi Goreng Sayur</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan-bahan 100 gram dada ayam panggang (iris tipis).1 genggam daun selada.1 buah tomat (iris).1/2 buah alpukat (potong dadu).sdm yogurt plain.1 sdt madu.1/2 sdt perasan jeruk lemon.Cara membuat Susun selada, tomat, alpukat, dan ayam panggang di piring. Campurkan yogurt, madu, dan perasan lemon untuk dressing.Tuang dressing ke atas salad, sajikan.')"
+          >
+            <img
+              src="img/salad ayam.jpeg"
+              alt="Salad Ayam Panggang"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">
+              Salad Ayam Panggang Dressing Yougurt
+            </h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan-bahan 1 buah pisang matang.1 genggam bayam segar.200 ml susu almond atau susu rendah lemak.1 sdt madu (opsional).Cara membuat Masukkan semua bahan ke dalam blender.Blend hingga halus.Sajikan dingin.')"
+          >
+            <img
+              src="img/smoothie.jpeg"
+              alt="Smoothies"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Smoothies</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan-bahan 3 sdm biji chia.200 ml susu almond atau susu rendah lemak.1 buah mangga atau stroberi (potong dadu).Cara membuat Campur biji chia dengan susu, aduk rata.Simpan di kulkas selama 3-4 jam hingga mengental.Tambahkan buah potong di atasnya sebelum disajikan')"
+          >
+            <img
+              src="img/puding chia.jpeg"
+              alt="Puding Chia buah"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Puding Chia buah</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('1/2 buah lemon (iris tipis).1/2 buah mentimun (iris tipis).1 liter air putih.Cara membuat Masukkan irisan lemon dan mentimun ke dalam botol berisi air.Diamkan di kulkas selama 2-4 jam.Nikmati sepanjang hari sebagai pengganti minuman manis.')"
+          >
+            <img
+              src="img/water.jpeg"
+              alt="Infused Water Lemon & cucumbar"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Infused Water Lemon & cucumbar</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan-bahan 2 cm jahe (geprek).300 ml air.1 sdt madu (opsional).Cara membuat Rebus jahe dalam air hingga mendidih.Angkat dan tuang ke dalam gelas.Tambahkan madu jika ingin rasa manis alami.')"
+          >
+            <img
+              src="img/jahe.jpeg"
+              alt="Teh Jahe Hangat"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Teh Jahe Hangat</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan 2 buah pisang matang 1 cangkir oat (rolled oats) 1/4 cangkir kismis atau cokelat hitam cincang (opsional) 1 sdt bubuk kayu manis (opsional) Cara Membuat Panaskan oven hingga 180°C (350°F).Lumatkan pisang matang dalam mangkuk hingga halus.Tambahkan oat ke dalam pisang lumat dan aduk hingga merata. Tambahkan kismis atau cokelat hitam dan bubuk kayu manis jika diinginkan.Ambil 1 sendok makan adonan, bentuk bulat, dan pipihkan di atas loyang yang telah dialasi kertas roti.Panggang selama 12–15 menit hingga matang dan sedikit kecokelatan.Dinginkan dan simpan dalam wadah kedap udara.')"
+          >
+            <img
+              src="img/oat banana cookies.jpeg"
+              alt="Oat Banana Cookies"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Oat Banana Cookies</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails('Bahan 200 gram dada ayam tanpa tulang 1 sdm madu 1 sdm kecap asin 1 siung bawang putih (cincang halus) 1 sdt minyak zaitun Garam dan merica secukupnya Cara Membuat Potong dada ayam menjadi ukuran kecil atau biarkan utuh sesuai selera.Campurkan madu, kecap asin, bawang putih, minyak zaitun, garam, dan merica dalam mangkuk untuk membuat bumbu marinasi.Lumuri ayam dengan bumbu marinasi, lalu diamkan selama 10–15 menit agar meresap.Panaskan wajan anti lengket atau panggangan dengan api sedang. Panggang ayam hingga matang dan kecokelatan di kedua sisi (sekitar 3–4 menit per sisi). Sajikan ayam panggang madu dengan nasi merah atau salad sebagai pendamping')"
+          >
+            <img
+              src="img/Ayam Panggang Madu.jpeg"
+              alt="Ayam Panggang Madu"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Panggang Madu</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails( 'Pastikan pola makan terdiri dari karbohidrat kompleks, protein, lemak sehat, serat, vitamin, dan mineral. Kurangi konsumsi makanan olahan, gula tambahan, dan makanan berlemak jenuh.')"
+          >
+            <img
+              src="img/seimbang.jpeg"
+              alt="Gizi Seimbang"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Gizi Seimbang</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails( 'Lakukan aktivitas fisik minimal 30 menit setiap hari, seperti jalan kaki, jogging, bersepeda, atau olahraga ringan lainnya untuk menjaga kebugaran tubuh.')"
+          >
+            <img src="img/lari.jpeg" alt="Olahraga" class="menu-card-img" />
+            <h3 class="menu-card-title">Olharaga</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails( 'Tidur 7–8 jam setiap malam untuk memulihkan energi, meningkatkan konsentrasi, dan menjaga kesehatan mental.')"
+          >
+            <img
+              src="img/Sleep.jpg"
+              alt="Cukup Istirahat"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Cukup Istirahat</h3>
+          </div>
+          <div
+            class="menu-card"
+            onclick="showDetails( 'Jauhi kebiasaan merokok, konsumsi alkohol berlebihan, dan stres berlebihan. Sebagai gantinya, latih diri untuk relaksasi dengan meditasi, yoga, atau hobi yang menyenangkan.')"
+          >
+            <img
+              src="img/no drunk.jpg"
+              alt="Kebiasaan Buruk"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Kebiasaan Buruk</h3>
+          </div>
+          <!-- Add more menu items similarly -->
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Modal for displaying menu item details -->
+    <div id="menu-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <!-- Products Section start -->
+    <section class="products" id="produk">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/Vitamin A.jpeg"
+              alt="Product 1"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin A</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/Vitamin B kompleks.png"
+              alt="Product 2"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin B kompleks</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 60K</span></div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/vitamin C.webp"
+              alt="Product 3"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin C</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 20K <span>IDR 55K</span></div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/vitamin E.webp"
+              alt="Product 4"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin E</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 40K <span>IDR 70K</span></div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/vitamin K.jpeg"
+              alt="Product 5"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin K</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 50K <span>IDR 90K</span></div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img
+              src="img/Products/vitamin-D.png"
+              alt="Product 6"
+              class="product-img"
+            />
+          </div>
+          <div class="product-content">
+            <h3>Vitamin D</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 35K <span>IDR 65K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Nutrition</a>
+        <a href="#menu">Recipes & Patterns</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">EatSmartLiveWell</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/Products/Vitamin A.jpeg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Vitamin A</h3>
+            <p>
+              Vitamin A bermanfaat untuk menjaga kesehatan mata, mendukung
+              sistem kekebalan tubuh, dan memperbaiki jaringan kulit. Vitamin
+              ini juga penting untuk pertumbuhan, reproduksi, dan kesehatan sel
+              tubuh. Sumbernya meliputi makanan hewani seperti hati, telur, dan
+              susu, serta nabati seperti wortel dan bayam. Konsumsi dalam jumlah
+              tepat penting untuk mencegah kekurangan maupun kelebihan.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/Products/Vitamin A.jpeg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Vitamin</h3>
+            <p>
+              Vitamin A bermanfaat untuk menjaga kesehatan mata, mendukung
+              sistem kekebalan tubuh, dan memperbaiki jaringan kulit. Vitamin
+              ini juga penting untuk pertumbuhan, reproduksi, dan kesehatan sel
+              tubuh. Sumbernya meliputi makanan hewani seperti hati, telur, dan
+              susu, serta nabati seperti wortel dan bayam. Konsumsi dalam jumlah
+              tepat penting untuk mencegah kekurangan maupun kelebihan.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
